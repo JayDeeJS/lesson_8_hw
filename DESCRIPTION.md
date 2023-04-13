@@ -1,0 +1,1 @@
+сделать GET запрос по http://jsonplaceholder.typicode.com/users и отобразить список пользователей, сделать с помощью createAsyncThunk

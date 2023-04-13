@@ -1,38 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
+
 .App {
-  text-align: center;
+  width: 100%;
+  font-family: 'DynaPuff', cursive;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.usersWrapper {
+  outline: 2px solid purple;
+  border-radius: 20px;
+  width: 95%;
+  margin: 20px auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-evenly;
 }
 
-.App-link {
-  color: #61dafb;
+.usersContent {
+  margin: 10px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.userCard {
+  width: 27%;
+  height: 110px;
+  outline: 2px dotted limegreen;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+.userCard h4 {
+  margin-top: 15px;
+}
+
+.success,
+.error,
+.loader {
+  border-radius: 10px;
+  position: absolute;
+  top: 10px;
+  left: 44%;
+  width: 160px;
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+}
+.loader {
+  background-color: grey;
+}
+.success {
+  background-color: lime;
+}
+.error {
+  background-color: orange;
 }
